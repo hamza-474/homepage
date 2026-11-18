@@ -2,15 +2,13 @@
 
 # Homepage — Personal Website of Hamza Madni
 
-This is a four-page personal website for Hamza Madni, a Computer Science graduate from the University of Sahiwal and an AI automation developer, built with HTML, CSS, JavaScript and Bootstrap 5 for Harvard's CS50x (Week 8). The site introduces who I am, what I have built, and how to reach me: a Home page with a time-based greeting and a dark/light mode toggle, an About page with my story, education and skills, a Projects page covering FinLedger AI, data analysis work and CS50 coursework, and a Contact page with my email, GitHub and LinkedIn plus a message form that confirms on the page without reloading.
-
-**Live demo (original CS50x version):** https://hamza-474.github.io/cs50x-projects/week8/homepage/
+This is a four-page personal website for Hamza Madni, a Computer Science graduate from the University of Sahiwal and an AI automation developer, built with HTML, CSS, JavaScript and Bootstrap 5 for Harvard's CS50x (Week 8). The Home page has been redesigned in a clean, reference-style layout: a thin mint top bar with my email, a letter-spaced header, a hero with my portrait and the headline "I help ideas turn into working software", two mint offer cards (AI Automation, and Web Apps & Data Tools), a strip of the platforms my work is live on, an about section with my portrait, a "How I Work" checkmark band, and a "Recommended By" section naming my two referees. The About, Projects and Contact pages keep the site's original styling and content.
 
 ## Pages
 
 | Page | What is on it |
 | --- | --- |
-| `index.html` | Hero, time-based greeting, dark/light toggle, "What I Do" cards, links to Projects and Contact |
+| `index.html` | Mint top bar, letter-spaced header with theme toggle, hero with portrait, offer cards, live-on badges, about section, "How I Work" band, recommendations |
 | `about.html` | My story, profile photo, education table, skills list |
 | `projects.html` | FinLedger AI, Data Analysis Projects, CS50 Coursework cards; GitHub link |
 | `contact.html` | Email, GitHub, LinkedIn and location; contact form with on-page confirmation |
@@ -24,20 +22,22 @@ python3 -m http.server 8000
 # then visit http://localhost:8000
 ```
 
-Bootstrap 5 is loaded from the jsDelivr CDN, so an internet connection is needed for the full Bootstrap styling and the mobile navigation toggle.
+Bootstrap 5 is loaded from the jsDelivr CDN, so an internet connection is needed for the full Bootstrap styling.
 
 ## Files
 
 | File | Purpose |
 | --- | --- |
-| `index.html` / `about.html` / `projects.html` / `contact.html` | The four pages, sharing one navbar and footer |
-| `styles.css` | Custom styling on top of Bootstrap: navy/teal/coral palette, hero, cards, dark mode |
+| `index.html` / `about.html` / `projects.html` / `contact.html` | The four pages |
+| `styles.css` | Shared styling: the original navy/teal/coral palette for About/Projects/Contact, plus the v2 `ref-` classes (mint + deep navy home page) and dark mode |
 | `script.js` | Automatic footer year, time-based greeting, dark/light toggle, contact-form confirmation |
+| `assets/hamza-portrait.png` | Hamza's portrait, used in the hero and about sections of the Home page |
 | `specification.txt` | CS50x specification checklist: HTML tags, CSS properties, JavaScript and Bootstrap features used |
+| `DESIGN-NOTES.md` | The v2 home-page design: section list, palette with where each colour is used, and the colour-theory verdict |
 
 ## Design
 
-The palette is an analogous-complementary scheme: deep navy `#0f2b46` and teal `#0e7c7b` (neighbouring blue hues on the colour wheel) carry the navbar, hero gradient, footer and headings, while a complementary coral `#e85d3f` is used sparingly for call-to-action buttons and card accents so the eye lands on the actions first. Dark mode deepens the same navy family instead of introducing new hues. Full colour notes are in `../NOTES.md` of the Week 8 prep folder.
+The redesigned Home page uses an analogous palette: mint/sage `#d7e8df` (top bar, offer cards, checkmark band) and deep navy-teal `#143642` (headings, buttons, footer) are neighbouring blue-green hues on the colour wheel (~152° and ~197°), so the page feels calm and professional, with white space keeping it light. Dark mode turns the mint surfaces into a deep green-navy so text stays readable. Full notes are in `DESIGN-NOTES.md`.
 
 ## Author
 

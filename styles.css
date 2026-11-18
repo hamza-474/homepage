@@ -149,3 +149,477 @@ body.dark-mode a {
 body.dark-mode .text-muted {
   color: #9fb3c8 !important;
 }
+
+/* ============================================================
+   Homepage v2 — reference-style home page sections (ref- prefix)
+   Palette for the home page (see DESIGN-NOTES.md):
+   - Mint / sage   #d7e8df  top bar, offer cards, band, badges
+   - Deep navy     #143642  headings, buttons, footer, brand
+   - Background    #ffffff / light
+   - Body text     #243b41
+   Existing classes above are unchanged and still used by
+   about / projects / contact.
+   ============================================================ */
+
+:root {
+  --ref-mint: #d7e8df;
+  --ref-mint-soft: #eef5f1;
+  --ref-navy: #143642;
+  --ref-navy-dark: #0e2931;
+  --ref-text: #243b41;
+  --ref-muted: #5b7178;
+}
+
+/* 1. Top bar */
+.ref-topbar {
+  background-color: var(--ref-mint);
+  padding: 0.35rem 0;
+  font-size: 0.85rem;
+}
+
+.ref-topbar-inner {
+  display: flex;
+  align-items: center;
+}
+
+.ref-topbar-mail {
+  color: var(--ref-navy);
+  text-decoration: none;
+}
+
+.ref-topbar-mail:hover,
+.ref-topbar-mail:focus {
+  color: var(--ref-navy-dark);
+  text-decoration: underline;
+}
+
+/* 2. Header */
+.ref-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e3ece8;
+  padding: 1rem 0;
+}
+
+.ref-header-inner {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.ref-brand {
+  color: var(--ref-navy);
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.35em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.ref-brand:hover,
+.ref-brand:focus {
+  color: var(--ref-navy-dark);
+}
+
+.ref-nav {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  margin-left: auto;
+}
+
+.ref-nav-link {
+  color: var(--ref-text);
+  text-decoration: none;
+  font-size: 0.98rem;
+  padding: 0.25rem 0;
+}
+
+.ref-nav-link:hover,
+.ref-nav-link:focus {
+  color: var(--ref-navy);
+  text-decoration: underline;
+}
+
+.ref-nav-link.active {
+  color: var(--ref-navy);
+  font-weight: 700;
+  border-bottom: 2px solid var(--ref-navy);
+}
+
+.ref-toggle {
+  background-color: #ffffff;
+  border: 1px solid var(--ref-navy);
+  border-radius: 2rem;
+  color: var(--ref-navy);
+  font-size: 0.82rem;
+  padding: 0.35rem 0.9rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.ref-toggle:hover,
+.ref-toggle:focus {
+  background-color: var(--ref-mint);
+}
+
+/* 3. Hero */
+.ref-hero {
+  background-color: var(--ref-mint-soft);
+  padding: 3.5rem 0;
+}
+
+.ref-hero-title {
+  color: var(--ref-navy);
+  font-size: 2.6rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+}
+
+.ref-hero-sub {
+  color: var(--ref-text);
+  font-size: 1.15rem;
+  max-width: 34rem;
+}
+
+.ref-greeting {
+  color: var(--ref-muted);
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+.ref-hero-photo {
+  background-color: #ffffff;
+  border: 1px solid #dbe7e1;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(20, 54, 66, 0.14);
+  padding: 0.75rem;
+  max-width: 340px;
+  margin: 1rem auto 0;
+}
+
+.ref-hero-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+}
+
+/* Shared section furniture */
+.ref-section {
+  padding: 3.5rem 0;
+}
+
+.ref-heading {
+  color: var(--ref-navy);
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.ref-heading-left {
+  text-align: left;
+}
+
+.ref-intro {
+  color: var(--ref-text);
+  max-width: 46rem;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+}
+
+.ref-btn {
+  display: inline-block;
+  background-color: var(--ref-navy);
+  border: 1px solid var(--ref-navy);
+  border-radius: 0.35rem;
+  color: #ffffff;
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+  padding: 0.6rem 1.4rem;
+  text-decoration: none;
+}
+
+.ref-btn:hover,
+.ref-btn:focus {
+  background-color: var(--ref-navy-dark);
+  border-color: var(--ref-navy-dark);
+  color: #ffffff;
+}
+
+/* 4. Offer cards */
+.ref-offer-card {
+  background-color: var(--ref-mint);
+  border-radius: 0.75rem;
+  padding: 2.25rem 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ref-offer-card p {
+  color: var(--ref-text);
+  flex-grow: 1;
+}
+
+.ref-icon {
+  background-color: #ffffff;
+  border-radius: 50%;
+  color: var(--ref-navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  height: 68px;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 4px 12px rgba(20, 54, 66, 0.12);
+}
+
+.ref-card-title {
+  color: var(--ref-navy);
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+}
+
+/* 5. Live-on strip */
+.ref-strip {
+  padding: 1rem 0 3rem;
+}
+
+.ref-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  justify-content: center;
+}
+
+.ref-badge {
+  background-color: var(--ref-mint-soft);
+  border: 1px solid var(--ref-mint);
+  border-radius: 2rem;
+  color: var(--ref-navy);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 0.55rem 1.5rem;
+}
+
+/* 6. About */
+.ref-about-photo {
+  max-width: 320px;
+  margin: 0 auto 1.5rem;
+}
+
+.ref-about-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(20, 54, 66, 0.16);
+}
+
+/* 7. How I work band */
+.ref-band {
+  background-color: var(--ref-mint);
+  padding: 3.5rem 0;
+}
+
+.ref-band .ref-heading {
+  color: var(--ref-navy);
+}
+
+.ref-checks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.ref-check-item {
+  flex: 1 1 160px;
+  max-width: 210px;
+  text-align: center;
+}
+
+.ref-check-item p {
+  color: var(--ref-text);
+  margin-top: 0.75rem;
+}
+
+.ref-check {
+  background-color: #ffffff;
+  border-radius: 50%;
+  color: var(--ref-navy);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(20, 54, 66, 0.12);
+}
+
+/* 8. Recommended by */
+.ref-rec-card {
+  background-color: #ffffff;
+  border: 1px solid #dbe7e1;
+  border-top: 4px solid var(--ref-navy);
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(20, 54, 66, 0.10);
+  padding: 1.75rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.ref-rec-card h3 {
+  color: var(--ref-navy);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.ref-rec-card p {
+  color: var(--ref-muted);
+  margin-bottom: 0;
+}
+
+.ref-rec-note {
+  color: var(--ref-muted);
+  font-style: italic;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+/* Footer in the v2 navy — the same navy family as the original
+   footer colour, so the other pages keep their character. */
+footer {
+  background-color: var(--ref-navy);
+}
+
+/* Dark mode for the new home sections: mint becomes a deep
+   green-navy, navy headings become light, text stays readable. */
+body.dark-mode .ref-topbar {
+  background-color: #17352c;
+}
+
+body.dark-mode .ref-topbar-mail {
+  color: #cfe8da;
+}
+
+body.dark-mode .ref-header {
+  background-color: #0b1d33;
+  border-bottom-color: #2c4a6b;
+}
+
+body.dark-mode .ref-brand,
+body.dark-mode .ref-nav-link.active {
+  color: #e6edf3;
+}
+
+body.dark-mode .ref-nav-link {
+  color: #c3d2de;
+}
+
+body.dark-mode .ref-toggle {
+  background-color: #132e4d;
+  border-color: #7dd3d8;
+  color: #e6edf3;
+}
+
+body.dark-mode .ref-hero {
+  background-color: #10283a;
+}
+
+body.dark-mode .ref-hero-title,
+body.dark-mode .ref-heading,
+body.dark-mode .ref-card-title,
+body.dark-mode .ref-rec-card h3 {
+  color: #e6edf3;
+}
+
+body.dark-mode .ref-hero-sub,
+body.dark-mode .ref-intro,
+body.dark-mode .ref-offer-card p,
+body.dark-mode .ref-check-item p {
+  color: #d7e2ea;
+}
+
+body.dark-mode .ref-greeting,
+body.dark-mode .ref-rec-card p,
+body.dark-mode .ref-rec-note {
+  color: #9fb3c8;
+}
+
+body.dark-mode .ref-hero-photo {
+  background-color: #132e4d;
+  border-color: #2c4a6b;
+}
+
+body.dark-mode .ref-offer-card,
+body.dark-mode .ref-band {
+  background-color: #17352c;
+}
+
+body.dark-mode .ref-icon,
+body.dark-mode .ref-check {
+  background-color: #e6edf3;
+  color: #143642;
+}
+
+body.dark-mode .ref-badge {
+  background-color: #17352c;
+  border-color: #2c5a48;
+  color: #cfe8da;
+}
+
+body.dark-mode .ref-rec-card {
+  background-color: #132e4d;
+  border-color: #2c4a6b;
+}
+
+body.dark-mode .ref-btn {
+  background-color: #e85d3f;
+  border-color: #e85d3f;
+}
+
+body.dark-mode .ref-btn:hover,
+body.dark-mode .ref-btn:focus {
+  background-color: #c94a30;
+  border-color: #c94a30;
+}
+
+@media (max-width: 767px) {
+  .ref-hero {
+    padding: 2.5rem 0;
+    text-align: center;
+  }
+
+  .ref-hero-title {
+    font-size: 2rem;
+  }
+
+  .ref-hero-sub {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ref-brand {
+    letter-spacing: 0.22em;
+  }
+
+  .ref-nav {
+    margin-left: 0;
+  }
+
+  .ref-heading-left {
+    text-align: center;
+  }
+}

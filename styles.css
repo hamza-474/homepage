@@ -1,0 +1,151 @@
+/* Homepage — polished standalone styles
+   Palette (see ../NOTES.md for the colour-theory notes):
+   - Deep navy   #0f2b46  navbar, footer, hero gradient start
+   - Teal        #0e7c7b  hero gradient end, section titles (analogous to navy)
+   - Coral       #e85d3f  CTA buttons, card accents (complementary accent)
+   - Light bg    #f6f8fa  page background (light mode)
+   - Card        #ffffff
+   - Text        #1f2937
+   - Dark bg     #0b1d33  page background (dark mode)
+   - Dark card   #132e4d
+*/
+
+:root {
+  --navy: #0f2b46;
+  --teal: #0e7c7b;
+  --teal-dark: #0a5f5e;
+  --coral: #e85d3f;
+  --coral-dark: #c94a30;
+  --bg: #f6f8fa;
+  --card: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.navbar {
+  background-color: var(--navy) !important;
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--navy), var(--teal));
+  color: #ffffff;
+  padding: 4rem 1rem;
+  text-align: center;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.section-title {
+  color: var(--teal-dark);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid var(--teal);
+  padding-bottom: 0.5rem;
+}
+
+.btn-primary {
+  background-color: var(--coral);
+  border-color: var(--coral);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--coral-dark);
+  border-color: var(--coral-dark);
+}
+
+.btn-outline-primary {
+  color: var(--coral-dark);
+  border-color: var(--coral);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  background-color: var(--coral);
+  border-color: var(--coral);
+  color: #ffffff;
+}
+
+.project-card {
+  background-color: var(--card);
+  border-top: 4px solid var(--coral);
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(15, 43, 70, 0.12);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.profile-img {
+  border: 4px solid var(--teal);
+  border-radius: 50%;
+  max-width: 220px;
+  box-shadow: 0 4px 12px rgba(15, 43, 70, 0.25);
+  margin-bottom: 1rem;
+}
+
+blockquote {
+  border-left: 4px solid var(--coral);
+  padding-left: 1rem;
+}
+
+footer {
+  background-color: var(--navy);
+  color: #ffffff;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+}
+
+#theme-toggle {
+  margin-top: 1rem;
+}
+
+.navbar #theme-toggle {
+  margin-top: 0;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background-color: #0b1d33;
+  color: #e6edf3;
+}
+
+body.dark-mode .project-card {
+  background-color: #132e4d;
+  color: #e6edf3;
+}
+
+body.dark-mode .section-title {
+  color: #7dd3d8;
+  border-bottom-color: var(--teal);
+}
+
+body.dark-mode .table {
+  color: #e6edf3;
+}
+
+body.dark-mode .table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #e6edf3;
+}
+
+body.dark-mode .form-control {
+  background-color: #132e4d;
+  border-color: #2c4a6b;
+  color: #e6edf3;
+}
+
+body.dark-mode a {
+  color: #7dd3d8;
+}
+
+body.dark-mode .text-muted {
+  color: #9fb3c8 !important;
+}

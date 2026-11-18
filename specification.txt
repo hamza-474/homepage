@@ -1,0 +1,16 @@
+Hamza Madni - CS50x Week 8 Homepage Specification
+
+HTML tags used (at least 10 distinct tags):
+- html, head, body, title, meta, link, nav, header, main, footer, section, article, h1, h2, h3, p, a, ul, li, img, div, span, button, form, label, input, textarea, table, thead, tbody, tr, th, td, blockquote, strong
+
+CSS properties used in styles.css (at least 5 properties):
+- background-color, color, font-family, line-height, margin, padding, text-align, border-radius, font-size, border-bottom, box-shadow, max-width, margin-bottom, margin-top
+
+JavaScript features (in script.js):
+- A dark/light mode toggle button changes the page theme when clicked.
+- A time-based greeting on the home page changes with the time of day.
+- The footer year is set automatically with JavaScript.
+- The contact form shows a thank-you confirmation message when submitted, without reloading the page.
+
+Bootstrap features:
+- Bootstrap 5.3.8 is used via CDN for the responsive navigation bar, grid layout, cards, badges, buttons, tables, and form styling.

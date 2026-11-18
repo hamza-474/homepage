@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Personal homepage of Hamza Madni, Computer Science graduate and AI automation developer — CS50x Week 8 project built with HTML, CSS, JavaScript and Bootstrap.">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link href="styles.css" rel="stylesheet">
+        <title>Hamza Madni - Home</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Hamza Madni</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header class="hero">
+            <h1>Hamza Madni</h1>
+            <p class="lead">Computer Science Graduate &amp; AI Automation Developer</p>
+            <p id="greeting">Welcome to my site!</p>
+            <button id="theme-toggle" class="btn btn-light" type="button">Switch to Dark Mode</button>
+        </header>
+        <main class="container my-5">
+            <section>
+                <h2 class="section-title">Welcome</h2>
+                <p>I am Hamza Madni, a Computer Science graduate from the University of Sahiwal (2022-2026) and an AI automation developer from Pakistan. I build practical software that saves people time: automating repetitive work, turning messy data into clear answers, and shipping web tools that are simple to use.</p>
+                <p>This site is my CS50x Week 8 homepage. It introduces who I am, what I have built, and how to reach me. Use the navigation above to explore my background, my projects, and my contact details.</p>
+            </section>
+            <section class="mt-5">
+                <h2 class="section-title">What I Do</h2>
+                <div class="row">
+                    <article class="col-md-4">
+                        <div class="project-card h-100">
+                            <h3>AI Automation</h3>
+                            <p>I design workflows that connect apps, documents, and data so routine tasks run on their own, with clear logs and human checks where they matter.</p>
+                        </div>
+                    </article>
+                    <article class="col-md-4">
+                        <div class="project-card h-100">
+                            <h3>Data Analysis</h3>
+                            <p>I clean, query, and visualise data with Python and SQL to answer real questions, from personal finance to business reporting.</p>
+                        </div>
+                    </article>
+                    <article class="col-md-4">
+                        <div class="project-card h-100">
+                            <h3>Web Development</h3>
+                            <p>I build responsive websites with HTML, CSS, JavaScript, and Bootstrap, including this site and my CS50 coursework.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="mt-5 text-center">
+                <h2 class="section-title">Start Here</h2>
+                <p>Curious about my work? Take a look at my projects, or send me a message.</p>
+                <a class="btn btn-primary me-2" href="projects.html">View Projects</a>
+                <a class="btn btn-outline-primary" href="contact.html">Contact Me</a>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; <span id="year">2026</span> Hamza Madni - Built with HTML, CSS, JavaScript, and Bootstrap for CS50x.</p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

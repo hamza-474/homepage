@@ -1,3 +1,5 @@
+🌐 Live demo: https://hamza-474.github.io/homepage/
+
 # Homepage — Personal Website of Hamza Madni
 
 This is a four-page personal website for Hamza Madni, a Computer Science graduate from the University of Sahiwal and an AI automation developer, built with HTML, CSS, JavaScript and Bootstrap 5 for Harvard's CS50x (Week 8). The site introduces who I am, what I have built, and how to reach me: a Home page with a time-based greeting and a dark/light mode toggle, an About page with my story, education and skills, a Projects page covering FinLedger AI, data analysis work and CS50 coursework, and a Contact page with my email, GitHub and LinkedIn plus a message form that confirms on the page without reloading.
